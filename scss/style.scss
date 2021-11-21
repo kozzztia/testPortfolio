@@ -1,4 +1,77 @@
-h1{
-    color: red;
-    font-size: 36px;
+// font-family: 'Arimo', sans-serif;
+// font-family: 'Road Rage', cursive;
+body{
+font-family: 'Arimo', sans-serif;
+color: #000000;
+position: relative;
+
+.menu {
+  display: none;
+}
+
+}
+// const
+$colorHover: #CBE918;
+$colorMenu: #C4C4C4;
+$ColorAnderlinne: #CD6B70;
+
+// header
+
+.header {
+ width: 100%;
+ height: auto;
+ position: relative;
+ position: fixed;
+ z-index: 99;
+
+}
+.header__nav {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  border: solid 1px #000;
+
+}
+.header__btn {
+  width: 25%;
+  padding: 10px;
+  transition: .5s;
+  font-size: 25px;
+  &:hover{
+    background: $colorHover;
+    box-shadow: inset 0px 0px 2px #000000;
+  }
+}
+.biography {
+}
+.landing {
+}
+.code {
+}
+.contact {
+}
+// main
+.main {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  overflow: hidden;
+}
+.main__container {
+  padding-top: 50px;
+  display: flex;
+  width: 300%;
+  position: relative;
+  right: 0;
+}
+.section {
+  padding: 20px;
+  background: url(../images/backgroung/bg.jpg);
+  background-position: top left no-repeat;
+}
+.main__biography {
+}
+.main__work {
+}
+.main__code {
 }

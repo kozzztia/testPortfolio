@@ -1,1 +1,15 @@
-h1 { color: red; font-size: 36px; }
+body { font-family: 'Arimo', sans-serif; color: #000000; position: relative; }
+body .menu { display: none; }
+
+.header { width: 100%; height: auto; position: relative; position: fixed; z-index: 99; }
+
+.header__nav { max-width: 1280px; margin: 0 auto; display: flex; border: solid 1px #000; }
+
+.header__btn { width: 25%; padding: 10px; transition: .5s; font-size: 25px; }
+.header__btn:hover { background: #CBE918; box-shadow: inset 0px 0px 2px #000000; }
+
+.main { max-width: 1280px; margin: 0 auto; overflow: hidden; }
+
+.main__container { padding-top: 50px; display: flex; width: 300%; position: relative; right: 0; }
+
+.section { padding: 20px; background: url(../images/backgroung/bg.jpg); background-position: top left no-repeat; }
