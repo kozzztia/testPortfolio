@@ -1,19 +1,32 @@
 body { font-family: 'Arimo', sans-serif; color: #000000; position: relative; }
 body .menu { display: none; }
 
+.section__text h1::after { content: ""; width: 100%; height: 2px; background: linear-gradient(to right, #fff 5%, #CD6B70 95%); display: block; }
+
 .header { width: 100%; height: auto; position: relative; position: fixed; z-index: 99; }
 
 .header__nav { max-width: 1280px; margin: 0 auto; display: flex; border: solid 1px #000; }
 
 .header__btn { width: 25%; padding: 10px; transition: .5s; font-size: 25px; cursor: pointer; background: #C4C4C4; }
 .header__btn:hover { background: #CBE918; box-shadow: inset 0px 0px 2px #000000; }
+.header__btn:nth-child(2) { background: #CBE918; }
 
 .main { max-width: 1280px; margin: 0 auto; overflow: hidden; }
 
 .main__container { padding-top: 50px; display: flex; width: 300%; position: relative; right: 0; }
 
-.section { padding: 20px; background: url(../images/backgroung/bg.jpg); background-position: top left no-repeat; }
+.section { padding: 20px; background: url(../images/backgroung/bg.jpg); background-position: right top; background-repeat: no-repeat; display: flex; }
 
+.section { width: 1280px; }
+
+.box { flex: 1; text-align: center; }
+
+.section__text h2 { font-size: 36px; font-weight: bold; margin-top: 50px; margin-bottom: 20px; }
+.section__text h1 { font-size: 40px; font-weight: bold; line-height: 1.5; margin-bottom: 20px; }
+.section__text p { font-size: 25px; text-align: left; text-indent: 20px; padding: 0 20px; margin-bottom: 20px; }
+
+@media (max-width: 1280px) { .section { max-width: 1280px; } }
+@media (max-width: 1000px) { .section { background-size: cover; flex-direction: column; } }
 @media (max-width: 800px) { .header__nav { flex-direction: column; height: 50px; overflow: hidden; }
   .header__nav .header__btn { width: 100%; }
   .header__nav .header__btn:hover { background: #CBE918; box-shadow: inset 0px 0px 2px #000000; }

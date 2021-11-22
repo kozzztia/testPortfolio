@@ -17,6 +17,7 @@ $(document).ready(function(){
     //   main.style.right = '200%';
     // })
     // ---------------------------------------------------------------main slider
+   
     let changeColor = function(element){
       $('.header__btn').css({'backgroundColor':'#C4C4C4'});
       $(element).css({'backgroundColor':'#CBE918'});
