@@ -31,24 +31,19 @@ $ColorAnderlinne: #CD6B70;
   display: flex;
   border: solid 1px #000;
 
+
 }
 .header__btn {
   width: 25%;
   padding: 10px;
   transition: .5s;
   font-size: 25px;
+  cursor: pointer;
+  background:$colorMenu;
   &:hover{
     background: $colorHover;
     box-shadow: inset 0px 0px 2px #000000;
   }
-}
-.biography {
-}
-.landing {
-}
-.code {
-}
-.contact {
 }
 // main
 .main {
@@ -69,9 +64,22 @@ $ColorAnderlinne: #CD6B70;
   background: url(../images/backgroung/bg.jpg);
   background-position: top left no-repeat;
 }
-.main__biography {
-}
-.main__work {
-}
-.main__code {
+@media (max-width: 800px) {
+
+  .header__nav{
+    flex-direction: column;
+    height: 50px;
+    overflow: hidden;
+    .header__btn{
+      width:100%;
+      &:hover{
+        background: $colorHover;
+        box-shadow: inset 0px 0px 2px #000000;
+      }
+    }
+    .menu{
+      font-size: 22px;
+      display: block;
+    }
+  }
 }
